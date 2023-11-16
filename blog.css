@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: auto;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: #2554d6;
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 2.0rem;
+}
+
+h1{
+    color:#2554d6;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1 span  {
+    color: green;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.container-noticias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:30px;
+    padding-bottom: 20px;
+}
+
+.container-noticias .item{
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container-noticias .item:hover{
+    box-shadow: 0 0 10px 5px #ccc;
+}
+
+.container-noticias .item:hover h2{
+    text-decoration: underline;
+}
+
+.container-noticias .item .info_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container-noticias .item img{
+    width: 100%;
+    display: none;
+}
